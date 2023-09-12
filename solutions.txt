@@ -24,7 +24,7 @@ SELECT products.product_name FROM products WHERE units_in_stock = 0
 SELECT customers.company_name FROM customers WHERE phone LIKE '%123%'
 17.SELECT * FROM products WHERE units_in_stock < 10 AND discontinued = 0; 
 SELECT products.product_name FROM products WHERE units_in_stock < 10 AND discontinued = 0; 
-18.
+18.SELECT MAX(unit_price)AS HighestPrice, MIN(unit_price)AS LowestPrice FROM Products;
 19.
 20.
 21.
