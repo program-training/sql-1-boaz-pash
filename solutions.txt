@@ -1,7 +1,7 @@
 את הפתרונות שלכם תכתבו כאן, אחרי כל שאלה, תעשו קומיט.
 1.SELECT products.product_id,products.Product_Name,products.Category_ID FROM products WHERE unit_price < 50
 2.SELECT * FROM customers WHERE country = 'Germany'.   SELECT country FROM customers WHERE country = 'Germany'
-3.
+3.SELECT * FROM orders WHERE customer_id = 'alfki' SELECT orders.order_id,orders.order_date FROM orders WHERE customer_id = 'alfki'
 4.
 5.
 6.
