@@ -5,7 +5,7 @@
 4.SELECT COUNT (order_id) AS TotalOrders FROM orders GROUP BY customer_id;
 5.SELECT * FROM products ORDER BY unit_price DESC LIMIT 5; SELECT products.product_name FROM products ORDER BY unit_price DESC LIMIT 5;
 6.SELECT * FROM employees WHERE birth_date < '1960-01-01'; SELECT employees.first_name,employees.last_name FROM employees WHERE birth_date < '1960-01-01'
-7.
+7.SELECT * FROM products WHERE units_in_stock = 0; SELECT products.product_name FROM products WHERE units_in_stock = 0
 8.
 9.
 10.
