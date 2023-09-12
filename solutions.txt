@@ -12,7 +12,7 @@
 11.SELECT *  FROM products WHERE discontinued = 1; SELECT products.product_name FROM products WHERE discontinued = 1
 12. SELECT COUNT (orders.order_id)  FROM orders WHERE EXTRACT(YEAR FROM orders.order_date) = '1997';
 13. SELECT * FROM customers WHERE customers.contact_title IN ('Owner','CEO') ;
-14.
+14.SELECT MAX(unit_price)FROM Products;
 15.
 16.
 17.
