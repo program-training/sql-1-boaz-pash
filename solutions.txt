@@ -2,9 +2,9 @@
 1.SELECT products.product_id,products.Product_Name,products.Category_ID FROM products WHERE unit_price < 50
 2.SELECT * FROM customers WHERE country = 'Germany'.   SELECT country FROM customers WHERE country = 'Germany'
 3.SELECT * FROM orders WHERE customer_id = 'alfki' SELECT orders.order_id,orders.order_date FROM orders WHERE customer_id = 'alfki'
-4.SELECT COUNT (order_id) AS TotalOrders FROM orders 
+4.SELECT COUNT (order_id) AS TotalOrders FROM orders GROUP BY customer_id;
 5.SELECT * FROM products ORDER BY unit_price DESC LIMIT 5; SELECT products.product_name FROM products ORDER BY unit_price DESC LIMIT 5;
-6.
+6.SELECT * FROM employees WHERE birth_date < '1960-01-01'; SELECT employees.first_name,employees.last_name FROM employees WHERE birth_date < '1960-01-01'
 7.
 8.
 9.
