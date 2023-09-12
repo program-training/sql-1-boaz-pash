@@ -1,19 +1,25 @@
 את הפתרונות שלכם תכתבו כאן, אחרי כל שאלה, תעשו קומיט.
 1.SELECT products.product_id,products.Product_Name,products.Category_ID FROM products WHERE unit_price < 50
-2.SELECT * FROM customers WHERE country = 'Germany'.   SELECT country FROM customers WHERE country = 'Germany'
-3.SELECT * FROM orders WHERE customer_id = 'alfki' SELECT orders.order_id,orders.order_date FROM orders WHERE customer_id = 'alfki'
+2.SELECT * FROM customers WHERE country = 'Germany';  
+ SELECT country FROM customers WHERE country = 'Germany'
+3.SELECT * FROM orders WHERE customer_id = 'alfki' 
+SELECT orders.order_id,orders.order_date FROM orders WHERE customer_id = 'alfki'
 4.SELECT COUNT (order_id) AS TotalOrders FROM orders GROUP BY customer_id;
-5.SELECT * FROM products ORDER BY unit_price DESC LIMIT 5; SELECT products.product_name FROM products ORDER BY unit_price DESC LIMIT 5;
-6.SELECT * FROM employees WHERE birth_date < '1960-01-01'; SELECT employees.first_name,employees.last_name FROM employees WHERE birth_date < '1960-01-01'
-7.SELECT * FROM products WHERE units_in_stock = 0; SELECT products.product_name FROM products WHERE units_in_stock = 0
+5.SELECT * FROM products ORDER BY unit_price DESC LIMIT 5; 
+SELECT products.product_name FROM products ORDER BY unit_price DESC LIMIT 5;
+6.SELECT * FROM employees WHERE birth_date < '1960-01-01'; 
+SELECT employees.first_name,employees.last_name FROM employees WHERE birth_date < '1960-01-01'
+7.SELECT * FROM products WHERE units_in_stock = 0; 
+SELECT products.product_name FROM products WHERE units_in_stock = 0
 8.SELECT AVG (unit_price) FROM products;
 9.SELECT SUM (unit_price * quantity)  FROM order_details WHERE product_id = 5;
 10.SELECT COUNT (DISTINCT category_id) FROM products
-11.SELECT *  FROM products WHERE discontinued = 1; SELECT products.product_name FROM products WHERE discontinued = 1
+11.SELECT *  FROM products WHERE discontinued = 1;
+ SELECT products.product_name FROM products WHERE discontinued = 1
 12. SELECT COUNT (orders.order_id)  FROM orders WHERE EXTRACT(YEAR FROM orders.order_date) = '1997';
 13. SELECT * FROM customers WHERE customers.contact_title IN ('Owner','CEO') ;
 14.SELECT MAX(unit_price)FROM Products;
-15.
+15.SELECT AVG (AGE(birth_date))FROM employees;
 16.
 17.
 18.
