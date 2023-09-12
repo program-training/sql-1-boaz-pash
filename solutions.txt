@@ -6,7 +6,7 @@
 5.SELECT * FROM products ORDER BY unit_price DESC LIMIT 5; SELECT products.product_name FROM products ORDER BY unit_price DESC LIMIT 5;
 6.SELECT * FROM employees WHERE birth_date < '1960-01-01'; SELECT employees.first_name,employees.last_name FROM employees WHERE birth_date < '1960-01-01'
 7.SELECT * FROM products WHERE units_in_stock = 0; SELECT products.product_name FROM products WHERE units_in_stock = 0
-8.
+8.SELECT AVG (unit_price) FROM products;
 9.
 10.
 11.
