@@ -20,7 +20,8 @@ SELECT products.product_name FROM products WHERE units_in_stock = 0
 13. SELECT * FROM customers WHERE customers.contact_title IN ('Owner','CEO') ;
 14.SELECT MAX(unit_price)FROM Products;
 15.SELECT AVG (AGE(birth_date))FROM employees;
-16.
+16.SELECT * FROM customers WHERE phone LIKE '%123%'
+SELECT customers.company_name FROM customers WHERE phone LIKE '%123%'
 17.
 18.
 19.
