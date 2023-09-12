@@ -1,6 +1,6 @@
 את הפתרונות שלכם תכתבו כאן, אחרי כל שאלה, תעשו קומיט.
-
-1.
+question 1:
+1.SELECT products.product_id,products.Product_Name,products.Category_ID FROM products WHERE unit_price < 50
 2.
 3.
 4.
