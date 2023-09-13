@@ -29,4 +29,4 @@ SELECT products.product_name FROM products WHERE units_in_stock < 10 AND discont
 SELECT orders.order_id FROM orders WHERE order_date ='1997-05-05'
 20.SELECT quantity_per_unit FROM products;
 21.SELECT product_id, product_name, unit_price FROM products WHERE unit_price > (SELECT AVG(unit_price) FROM products)
-22.
+22.SELECT COUNT(employee_id), city FROM employees GROUP BY city
